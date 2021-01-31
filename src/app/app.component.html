@@ -413,16 +413,24 @@
   </div>
 
   <!-- Terminal -->
-  <div class="terminal" [ngSwitch]="selection.value">
-      <pre *ngSwitchDefault>ng generate component xyz</pre>
-      <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
-      <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>
-      <pre *ngSwitchCase="'dependency'">ng add _____</pre>
-      <pre *ngSwitchCase="'test'">ng test</pre>
-      <pre *ngSwitchCase="'build'">ng build --prod</pre>
+<!--  <div class="terminal" [ngSwitch]="selection.value">-->
+<!--      <pre *ngSwitchDefault>ng generate component xyz</pre>-->
+<!--      <pre *ngSwitchCase="'material'">ng add @angular/material</pre>-->
+<!--      <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>-->
+<!--      <pre *ngSwitchCase="'dependency'">ng add _____</pre>-->
+<!--      <pre *ngSwitchCase="'test'">ng test</pre>-->
+<!--      <pre *ngSwitchCase="'build'">ng build &#45;&#45;prod</pre>-->
+<!--  </div>-->
+
+  <div>
+    <app-pist></app-pist>
+    <p>{{ title }}</p>
   </div>
 
-  <app-pist></app-pist>
+  <div>
+    <input type="text" (input)="onInput($event)" )>
+    <p>strong{{inputValue}}</p>
+  </div>
 
   <!-- Links -->
   <div class="card-container">

@@ -26,7 +26,7 @@ module.exports = {
     'indent': 'off',
     'eol-last': ['error', 'always'],
     'no-proto': 'error',
-    'no-console': 'error',
+    'no-console': 'off',
     'quote-props': ['error', `consistent-as-needed`],
     'no-multiple-empty-lines': ['error', {max: 3, maxEOF: 0}],
     'comma-dangle': ['error', {
