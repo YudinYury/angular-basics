@@ -428,9 +428,13 @@
   </div>
 
   <div>
-    <input type="text" (input)="onInput($event)" )>
-    <p>strong{{inputValue}}</p>
+    <button (click)="onClick">Click me</button>
   </div>
+
+    <div>
+      <input type="text" (input)="onInput($event)">
+      <p>{{inputValue}}</p>
+    </div>
 
   <!-- Links -->
   <div class="card-container">

@@ -15,8 +15,13 @@ export class AppComponent {
   }
 
   // tslint:disable-next-line:typedef
-  onInput(event?: any) {
-    console.debug('event =', event);
-    this.inputValue = event?.target;
+  onInput(event: any) {
+    // console.log('event =', (event as InputEvent).data);
+    this.inputValue = this.inputValue + (event as InputEvent).data || '';
+  }
+
+  // tslint:disable-next-line:typedef
+  onClick() {
+    console.log('onClick = click');
   }
 }
