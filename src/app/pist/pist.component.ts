@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-pist',
   templateUrl: './pist.component.html',
   styleUrls: ['./pist.component.scss']
 })
-export class PistComponent implements OnInit {
+export class PistComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  toggle = false;
 
 }

@@ -1,6 +1,10 @@
-<div class="pist">
-  <h2>Pist title</h2>
-
+<h1>pist works</h1>
+<div  class="pist">
   <p>pist works!</p>
 </div>
+<button (click)="toggle !=toggle">Toggle</button>
+<p *ngIf="toggle; else blueP" class="red">Lorem ipsum </p>
 
+<ng-template #blueP>
+  <p class="blue">Lorem ipsum</p>
+</ng-template>
